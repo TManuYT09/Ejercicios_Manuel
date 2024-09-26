@@ -13,10 +13,10 @@ public class Main {
 //        operadores.comparacion();
 //        operadores.logico();
 
-        Ejercicio1 ejercicio1 = new Ejercicio1();
-        ejercicio1.ejercicio1();
+//        Ejercicio1 ejercicio1 = new Ejercicio1();
+//        ejercicio1.ejercicio1();
 
-//        Ejercicio2 ejercicio2 = new Ejercicio2();
-//        ejercicio2.ejercicio2();
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        ejercicio2.ejercicio2();
     }
 }
