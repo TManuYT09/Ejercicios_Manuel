@@ -25,7 +25,10 @@ public class Main {
 //        Ejercicio4 ejercicio4 = new Ejercicio4();
 //        ejercicio4.ejercicio4();
 
-        Ejercicio5 ejercicio5 = new Ejercicio5();
-        ejercicio5.ejercicio5();
+//        Ejercicio5 ejercicio5 = new Ejercicio5();
+//        ejercicio5.ejercicio5();
+
+        Ejercicio6 ejercicio6 = new Ejercicio6();
+        ejercicio6.ejercicio6();
     }
 }
