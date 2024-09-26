@@ -7,7 +7,16 @@ public class Main {
 //        Actividad2 actividad2 = new Actividad2();
 //        actividad2.ejecutar();
 
+//        Operadores operadores = new Operadores();
+//        operadores.operadores();
+//        operadores.asignacion();
+//        operadores.comparacion();
+//        operadores.logico();
+
         Ejercicio1 ejercicio1 = new Ejercicio1();
         ejercicio1.ejercicio1();
+
+//        Ejercicio2 ejercicio2 = new Ejercicio2();
+//        ejercicio2.ejercicio2();
     }
 }
