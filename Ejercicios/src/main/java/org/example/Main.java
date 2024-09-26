@@ -4,8 +4,8 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//        Actividad2 actividad2 = new Actividad2();
-//        actividad2.ejecutar();
+//        Actividad_inicial actividad_inicial = new Actividad_inicial();
+//        actividad_inicial.ejecutar();
 
 //        Operadores operadores = new Operadores();
 //        operadores.operadores();
