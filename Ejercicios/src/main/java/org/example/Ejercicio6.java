@@ -19,5 +19,14 @@ public class Ejercicio6 {
         Scanner entrada=new Scanner(System.in);
         System.out.println("¿Tienes tomates?");
         boolean tomate=entrada.nextBoolean();
+        System.out.println("¿Tienes aceite?");
+        boolean aceite=entrada.nextBoolean();
+        System.out.println("¿Tienes jamón?");
+        boolean jamon=entrada.nextBoolean();
+        if (!tomate || !aceite || !jamon){
+            System.out.println("¡Tenemos que ir a comprar!");
+        }else{
+            System.out.println("¡No tenemos que ir a comprar!");
+        }
     }
 }
