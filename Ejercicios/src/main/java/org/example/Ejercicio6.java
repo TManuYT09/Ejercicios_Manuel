@@ -17,5 +17,7 @@ import java.util.Scanner;
 public class Ejercicio6 {
     public void ejercicio6(){
         Scanner entrada=new Scanner(System.in);
+        System.out.println("¿Tienes tomates?");
+        boolean tomate=entrada.nextBoolean();
     }
 }
