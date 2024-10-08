@@ -6,8 +6,8 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio3 {
-    public void ejercicio3(){
+public class Ejercicio13 {
+    public void ejercicio13(){
         System.out.println("Introduce el divisor");
         Scanner entrada=new Scanner(System.in);
         int divisor=entrada.nextInt();

@@ -14,8 +14,8 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio6 {
-    public void ejercicio6(){
+public class Ejercicio16 {
+    public void ejercicio16(){
         Scanner entrada=new Scanner(System.in);
         System.out.println("¿Tienes tomates?");
         boolean tomate=entrada.nextBoolean();

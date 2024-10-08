@@ -7,8 +7,8 @@ package org.example;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Ejercicio1 {
-    public void ejercicio1(){
+public class Ejercicio11 {
+    public void ejercicio11(){
         int comp = 1;
         int numero = 0;
 

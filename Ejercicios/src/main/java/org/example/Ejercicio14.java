@@ -4,8 +4,8 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio4 {
-    public void ejercicio4(){
+public class Ejercicio14 {
+    public void ejercicio14(){
         Scanner entrada=new Scanner(System.in);
         int b = -1;
         int h = -1;

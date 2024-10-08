@@ -6,8 +6,8 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Ejercicio2 {
-    public void ejercicio2(){
+public class Ejercicio12 {
+    public void ejercicio12(){
         System.out.println("Introduce un número:");
         Scanner entrada=new Scanner(System.in);
         int num1=entrada.nextInt();
