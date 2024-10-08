@@ -38,8 +38,14 @@ public class Main {
 //        CosasString caracteres = new CosasString();
 //        caracteres.caracteres();
 
-        Ejercicio21 ejercicio21 = new Ejercicio21();
-        ejercicio21.ejercicio21();
+//        Ejercicio21 ejercicio21 = new Ejercicio21();
+//        ejercicio21.ejercicio21();
+
+//        Ejercicio22 ejercicio22 = new Ejercicio22();
+//        ejercicio22.ejercicio22();
+
+        Ejercicio23 ejercicio23 = new Ejercicio23();
+        ejercicio23.ejercicio23();
 
     }
 }
