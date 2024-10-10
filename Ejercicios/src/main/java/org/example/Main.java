@@ -5,25 +5,14 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         /*Tema 1*/
-//        Ejercicio11 ejercicio11 = new Ejercicio11();
-//        ejercicio11.ejercicio11();
-
-//        Ejercicio12 ejercicio12 = new Ejercicio12();
-//        ejercicio12.ejercicio12();
-
-//        Ejercicio13 ejercicio13 = new Ejercicio13();
-//        ejercicio13.ejercicio13();
-
-//        Ejercicio14 ejercicio14 = new Ejercicio14();
-//        ejercicio14.ejercicio14();
-
-//        Ejercicio15 ejercicio15 = new Ejercicio15();
-//        ejercicio15.ejercicio15();
-
-//        Ejercicio16 ejercicio16 = new Ejercicio16();
-//        ejercicio16.ejercicio16();
+        Tema1 tema1 = new Tema1();
+//        tema1.ejercicio1();
+//        tema1.ejercicio2();
+//        tema1.ejercicio3();
+//        tema1.ejercicio4();
+//        tema1.ejercicio5();
+//        tema1.ejercicio6();
 
 //        Actividad_inicial actividad_inicial = new Actividad_inicial();
 //        actividad_inicial.ejecutar();
@@ -38,14 +27,12 @@ public class Main {
 //        CosasString caracteres = new CosasString();
 //        caracteres.caracteres();
 
-//        Ejercicio21 ejercicio21 = new Ejercicio21();
-//        ejercicio21.ejercicio21();
-
-//        Ejercicio22 ejercicio22 = new Ejercicio22();
-//        ejercicio22.ejercicio22();
-
-        Ejercicio23 ejercicio23 = new Ejercicio23();
-        ejercicio23.ejercicio23();
+        Tema2 tema2 = new Tema2();
+//        tema2.ejercicio1();
+//        tema2.ejercicio2();
+//        tema2.ejercicio3();
+//        tema2.ejercicio4();
+        tema2.ejercicio5();
 
     }
 }
