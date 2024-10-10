@@ -69,7 +69,7 @@ public class Tema2 {
             System.out.println(j2 + " introduzca una palabra");
             String palabra = entrada.next();
             if (cadena.contains(palabra) == false) {
-                intentos = intentos - 1;
+                intentos -=  1;
                 if (intentos>=1){
                     System.out.println("Te quedan " + intentos + " intentos");
                 }
