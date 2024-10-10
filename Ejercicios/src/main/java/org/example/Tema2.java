@@ -54,7 +54,7 @@ public class Tema2 {
         System.out.println("La subcadena "+ subcadena +" aparece "+ num +" veces.");
 
     }
-    public void ejercicio5() {
+    public void ejercicio5(){
         String j1 = "Jugador 1";
         String j2 = "Jugador 2";
         int intentos = 10;
@@ -73,7 +73,6 @@ public class Tema2 {
                 if (intentos>=1){
                     System.out.println("Te quedan " + intentos + " intentos");
                 }
-
             } else {
                 System.out.println("¡Enhorabuena, has acertado una palabra!");
                 terminar=false;
