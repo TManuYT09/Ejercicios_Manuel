@@ -12,7 +12,6 @@ public class Excepciones {
         int dividendo = 0;
 
         System.out.println("Introduce el dividendo: ");
-
         if (teclado.hasNextInt()){
             dividendo = teclado.nextInt();
         }else {

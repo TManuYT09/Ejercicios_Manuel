@@ -118,7 +118,7 @@ public class Tema2 {
                     System.out.println("El año introducido no es corrector");
                 }else if (anyo >= 1900 && anyo <= 1927){
                         System.out.println("Tu generazión no fue bautizada");
-                }else if (anyo <= 1944){
+                }else if (anyo >= 1928 && anyo <= 1944){
                     System.out.println("Tu generación es Silent");
                 }else if (anyo >= 1945 && anyo <= 1964){
                     System.out.println("Tu generación es Baby Boomers");
