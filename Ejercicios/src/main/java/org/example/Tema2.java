@@ -103,76 +103,54 @@ public class Tema2 {
         }
         int anyo = 1800;
 
-        switch (modo){
-            case 1:
-                System.out.println("Introduzca tu año de nacimiento");
-                String ano = entrada.next();
+        if (modo == 1){
+            System.out.println("Introduzca tu año de nacimiento");
+            String ano = entrada.next();
 
-                try{
-                    anyo = Integer.parseInt(ano);
-                }catch (NumberFormatException e){
-                    System.out.println("Has introducido un formato erróneo. No es un número.");
+            try{
+                anyo = Integer.parseInt(ano);
+            }catch (NumberFormatException e){
+                System.out.println("Has introducido un formato erróneo. No es un número.");
+            }
+        }
+        if (modo == 2){
+            System.out.println("Introduzca su edad:");
+            int edad = 0;
+            boolean compo = false;
+
+            if (entrada.hasNextInt()){
+                edad = entrada.nextInt();
+            }else {
+                System.out.println("La edad introducida no tiene un formato válido");
+                compo = true;
+            }
+
+            if (!compo) {
+                if (edad < 0) {
+                    System.out.println("La edad introducida no es válida.");
+                } else {
+                    anyo = anyo_actual - edad;
+                    System.out.println("Naciste en el " + anyo);
                 }
+            }
+        }
 
-                if (anyo<1900||anyo>anyo_actual){
-                    System.out.println("El año introducido no es corrector");
-                }else if (anyo >= 1900 && anyo <= 1927){
-                        System.out.println("Tu generazión no fue bautizada");
-                }else if (anyo >= 1928 && anyo <= 1944){
-                    System.out.println("Tu generación es Silent");
-                }else if (anyo >= 1945 && anyo <= 1964){
-                    System.out.println("Tu generación es Baby Boomers");
-                }else if (anyo >= 1965 && anyo <= 1981){
-                    System.out.println("Tu generación es X");
-                }else if (anyo >= 1982 && anyo <= 1994){
-                    System.out.println("Tu generación es Y/Milennial");
-                }else if (anyo >= 1995 && anyo <= anyo_actual){
-                    System.out.println("Tu generación es Z/Centennials");
-                }else {
-                    System.out.println("No eres de ninguna generación");
-                }
-
-                break;
-            case 2:
-                System.out.println("Introduzca su edad:");
-                int edad = 0;
-                boolean compo = false;
-
-                if (entrada.hasNextInt()){
-                    edad = entrada.nextInt();
-                }else {
-                    System.out.println("La edad introducida no tiene un formato válido");
-                    compo = true;
-                }
-
-                if (!compo){
-                    if (edad < 0){
-                        System.out.println("La edad introducida no es válida.");
-                    }else {
-                        anyo = anyo_actual - edad;
-                        System.out.println("Naciste en el "+ anyo);
-                    }
-
-                    if (anyo<1900||anyo>anyo_actual){
-                        System.out.println("El año introducido no es corrector");
-                    }else if (anyo >= 1900 && anyo <= 1927){
-                        System.out.println("Tu generazión no fue bautizada");
-                    }else if (anyo >= 1928 && anyo <= 1944){
-                        System.out.println("Tu generación es Silent");
-                    }else if (anyo >= 1945 && anyo <= 1964){
-                        System.out.println("Tu generación es Baby Boomers");
-                    }else if (anyo >= 1965 && anyo <= 1981){
-                        System.out.println("Tu generación es X");
-                    }else if (anyo >= 1982 && anyo <= 1994){
-                        System.out.println("Tu generación es Y/Milennial");
-                    }else if (anyo >= 1995 && anyo <= anyo_actual){
-                        System.out.println("Tu generación es Z/Centennials");
-                    }else {
-                        System.out.println("No eres de ninguna generación");
-                    }
-                }
-                break;
-            default:System.out.println("El modo "+ modo +" no existe.");
+        if (anyo<1900||anyo>anyo_actual){
+            System.out.println("El año introducido no es corrector");
+        }else if (anyo >= 1900 && anyo <= 1927){
+            System.out.println("Tu generazión no fue bautizada");
+        }else if (anyo >= 1928 && anyo <= 1944){
+            System.out.println("Tu generación es Silent");
+        }else if (anyo >= 1945 && anyo <= 1964){
+            System.out.println("Tu generación es Baby Boomers");
+        }else if (anyo >= 1965 && anyo <= 1981){
+            System.out.println("Tu generación es X");
+        }else if (anyo >= 1982 && anyo <= 1994){
+            System.out.println("Tu generación es Y/Milennial");
+        }else if (anyo >= 1995 && anyo <= anyo_actual){
+            System.out.println("Tu generación es Z/Centennials");
+        }else {
+            System.out.println("No eres de ninguna generación");
         }
     }
 }
