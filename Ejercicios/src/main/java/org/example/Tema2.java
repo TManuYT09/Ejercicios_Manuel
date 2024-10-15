@@ -103,36 +103,41 @@ public class Tema2 {
         }
         int anyo = 1800;
 
-        if (modo == 1){
-            System.out.println("Introduzca tu año de nacimiento");
-            String ano = entrada.next();
+        switch (modo){
+            case 1:
+                System.out.println("Introduzca tu año de nacimiento");
+                String ano = entrada.next();
 
-            try{
-                anyo = Integer.parseInt(ano);
-            }catch (NumberFormatException e){
-                System.out.println("Has introducido un formato erróneo. No es un número.");
-            }
-        }
-        if (modo == 2){
-            System.out.println("Introduzca su edad:");
-            int edad = 0;
-            boolean compo = false;
-
-            if (entrada.hasNextInt()){
-                edad = entrada.nextInt();
-            }else {
-                System.out.println("La edad introducida no tiene un formato válido");
-                compo = true;
-            }
-
-            if (!compo) {
-                if (edad < 0) {
-                    System.out.println("La edad introducida no es válida.");
-                } else {
-                    anyo = anyo_actual - edad;
-                    System.out.println("Naciste en el " + anyo);
+                try{
+                    anyo = Integer.parseInt(ano);
+                }catch (NumberFormatException e){
+                    System.out.println("Has introducido un formato erróneo. No es un número.");
                 }
-            }
+            break;
+            case 2:
+                System.out.println("Introduzca su edad:");
+                int edad = 0;
+                boolean compo = false;
+
+                if (entrada.hasNextInt()){
+                    edad = entrada.nextInt();
+                }else {
+                    System.out.println("La edad introducida no tiene un formato válido");
+                    compo = true;
+                }
+
+                if (!compo) {
+                    if (edad < 0) {
+                        System.out.println("La edad introducida no es válida.");
+                    } else {
+                        anyo = anyo_actual - edad;
+                        System.out.println("Naciste en el " + anyo);
+                    }
+                }
+            break;
+            default:
+                System.out.println("El modo introducido es erronero");
+            break;
         }
 
         if (anyo<1900||anyo>anyo_actual){
@@ -151,6 +156,55 @@ public class Tema2 {
             System.out.println("Tu generación es Z/Centennials");
         }else {
             System.out.println("No eres de ninguna generación");
+        }
+    }
+    public void ejercicioAzul1(){
+        System.out.println("Introduzca su altura (en cm):");
+        Scanner entrada = new Scanner(System.in);
+        int altura = 0;
+
+        while (altura==0){
+            try{
+                altura = entrada.nextInt();
+            }catch (InputMismatchException err){
+                System.out.println("Error: "+ err);
+                entrada.nextLine();
+            }
+        }
+
+        if (altura <= 150){
+            System.out.println("Persona de altura baja");
+        }else if (altura >=151 && altura <=175) {
+            System.out.println("Persona de altura media");
+        }else if (altura >=176){
+            System.out.println("Persona alta");
+        }
+    }
+    public void ejercicioAzul2(){
+        System.out.println("Introduzca un numero");
+        Scanner entrada = new Scanner(System.in);
+        int num = 0;
+        boolean comp = true;
+
+        while (comp){
+            try{
+                num = entrada.nextInt();
+                comp = false;
+            }catch (InputMismatchException err){
+                System.out.println("Valor introducido no válido");
+                entrada.nextLine();
+            }
+        }
+
+        switch (num){
+            case 1: System.out.println("Lunes");break;
+            case 2: System.out.println("Martes");break;
+            case 3: System.out.println("Miércoles");break;
+            case 4: System.out.println("Jueves");break;
+            case 5: System.out.println("Viernes");break;
+            case 6: System.out.println("Sábado");break;
+            case 7: System.out.println("Domingo");break;
+            default: System.out.println("Nada");break;
         }
     }
 }
