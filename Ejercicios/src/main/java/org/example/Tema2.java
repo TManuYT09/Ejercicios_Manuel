@@ -207,4 +207,10 @@ public class Tema2 {
             default: System.out.println("Nada");break;
         }
     }
+    public void ternaria(){
+        int a=1, b=2, c=4;
+        int resultado = b++ == c && a++ > b ? b -= a :
+                            c<10 && b>=a? c+=b :
+                                    a==c ? b++ : b--;
+    }
 }
