@@ -38,7 +38,14 @@ public class Main {
 //        tema2.actividad1();
 //        tema2.ejercicioAzul1();
 //        tema2.ejercicioAzul2();
-        tema2.ternaria();
-
+//        tema2.ternaria();
+//        tema2.bateria1();
+//        tema2.bateria2();
+//        tema2.bateria3();
+//        tema2.bateria4();
+//        tema2.bateria5();
+//        tema2.bateria6();
+//        tema2.bateria7();
+        tema2.bateria8();
     }
 }

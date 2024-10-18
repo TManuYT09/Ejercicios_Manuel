@@ -1,5 +1,6 @@
 package org.example;
 
+import java.net.SecureCacheResponse;
 import java.time.LocalDateTime;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -212,5 +213,81 @@ public class Tema2 {
         int resultado = b++ == c && a++ > b ? b -= a :
                             c<10 && b>=a? c+=b :
                                     a==c ? b++ : b--;
+    }
+    public void bateria1(){
+        Scanner entrada = new Scanner(System.in);
+        String psw = "augusto";
+        String contra;
+        do {
+            System.out.println("Introduce tu contraseña");
+            contra = entrada.next();
+
+        }while(!contra.equals(psw));
+
+        System.out.println("BIENVENIDO. Contraseña correcta.");
+    }
+    public void bateria2(){
+        Scanner entrada = new Scanner(System.in);
+        int num;
+        System.out.println("Introduzca un número");
+        num = entrada.nextInt();
+        for (int i=num;i>=1;i--){
+            System.out.println(i);
+        }
+    }
+    public void bateria3(){
+        for(int i=1;i<=50;i++){
+            if (i%3==0){
+                System.out.println(i);
+            }
+        }
+    }
+    public void bateria4(){
+        Scanner entrada=new Scanner(System.in);
+        String texto=entrada.nextLine();
+        for (int i=0;i<texto.length();i++){
+            System.out.println(texto.substring(i,i+1));
+        }
+    }
+    public void bateria5(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Introduzca un numero");
+        int num=entrada.nextInt();
+        for (int i=1;i<=10;i++){
+            System.out.println(num+" x "+i+" = "+ num*i);
+        }
+    }
+    public void bateria6(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("¿Cuántos números quieres sumar?:");
+        int num = entrada.nextInt();
+        int temp;
+        int tot = 0;
+        for (int i=1;tot!=num;i++){
+            System.out.println("Inserta nº"+i);
+            temp=entrada.nextInt();
+            tot = tot+temp;
+        }
+        System.out.println("El resultado es: "+tot);
+    }
+    public void bateria7(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Introduzca un numero");
+        int num = entrada.nextInt();
+        int tot=1;
+        for (int i=num;i>0;i--){
+            tot = tot*i;
+        }
+        System.out.println("El resultado es = "+ tot);
+    }
+    public void bateria8(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Introduzca un texto:");
+        String texto = entrada.nextLine();
+        String otxet = "";
+        for (int i=texto.length();i>0;i--){
+            otxet = otxet+texto.substring(i-1,i);
+        }
+        System.out.println(otxet);
     }
 }
