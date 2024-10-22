@@ -341,6 +341,5 @@ public class Tema2 {
             contrasena=contrasena+letra;
         }
         System.out.println("Tu nueva contraseña es: "+contrasena);
-        System.out.println(contrasena.length());
     }
 }
