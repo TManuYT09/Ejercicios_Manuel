@@ -1,8 +1,8 @@
 package org.example;
 
-import java.net.SecureCacheResponse;
 import java.time.LocalDateTime;
 import java.util.InputMismatchException;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Tema2 {
@@ -289,5 +289,58 @@ public class Tema2 {
             otxet = otxet+texto.substring(i-1,i);
         }
         System.out.println(otxet);
+    }
+    public void random1(){
+        Random random = new Random();
+        int dado1 = random.nextInt(6)+1;
+        int dado2 = random.nextInt(6)+1;
+        System.out.println("Los numeros son el "+ dado1 +" y el "+dado2);
+        System.out.println("Has sacado un "+ (dado1+dado2));
+    }
+    public void random2(){
+        Random random = new Random();
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        String contrasena="";
+        int num=0;
+        String letra;
+        for (int i=random.nextInt(100);i>0;i--){
+            num=random.nextInt(caracteres.length())+1;
+            letra=caracteres.substring(num-1,num);
+            contrasena=contrasena+letra;
+        }
+        System.out.println("Tu nueva contraseña es: "+contrasena);
+    }
+    public void random3(){
+        Scanner entrada = new Scanner(System.in);
+        Random random = new Random();
+        System.out.println("Dime un numero");
+        int nummin=entrada.nextInt();
+        System.out.println("Dime otro numero");
+        int nummax=entrada.nextInt();
+        int ale=0;
+        if (nummin <= nummax){
+            System.out.println("Cuandos numeros quieres que salgan por pantalla");
+            int num = entrada.nextInt();
+            for(int i=num;i>0;i--){
+                ale=random.nextInt(nummax-nummin+1)+nummin;
+                System.out.println(ale);
+            }
+        }else {
+            System.out.println("ERROR. El primer numero introducido es mayor que el segundo");
+        }
+    }
+    public void random4(){
+        Random random = new Random();
+        String caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        String contrasena="";
+        int num=0;
+        String letra;
+        for (int i=random.nextInt(6,9);i>0;i--){
+            num=random.nextInt(caracteres.length())+1;
+            letra=caracteres.substring(num-1,num);
+            contrasena=contrasena+letra;
+        }
+        System.out.println("Tu nueva contraseña es: "+contrasena);
+        System.out.println(contrasena.length());
     }
 }

@@ -46,6 +46,10 @@ public class Main {
 //        tema2.bateria5();
 //        tema2.bateria6();
 //        tema2.bateria7();
-        tema2.bateria8();
+//        tema2.bateria8();
+//        tema2.random1();
+//        tema2.random2();
+//        tema2.random3();
+        tema2.random4();
     }
 }
