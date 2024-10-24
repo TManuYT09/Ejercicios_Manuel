@@ -50,6 +50,12 @@ public class Main {
 //        tema2.random1();
 //        tema2.random2();
 //        tema2.random3();
-        tema2.random4();
+//        tema2.random4();
+//        tema2.bateriapre1();
+//        tema2.bateriapre2();
+//        tema2.bateriapre3();
+//        tema2.bateriapre4();
+        tema2.bateriapre5();
+//        tema2.bateriapre6();
     }
 }

@@ -342,4 +342,113 @@ public class Tema2 {
         }
         System.out.println("Tu nueva contraseña es: "+contrasena);
     }
+    public void bateriapre1(){
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Introduzca cuantas veces quiere meter numeros:");
+        int cantidad = entrada.nextInt();
+        int num;
+        int mayor=0;
+        int menor=0;
+        int cero=0;
+        for (int i=cantidad;i!=0;i--){
+            System.out.println("Introduzca un numero");
+            num=entrada.nextInt();
+            if (num>0){
+                mayor=mayor+1;
+            }else {
+                if (num<0){
+                    menor=menor+1;
+                }else {
+                    cero=cero+1;
+                }
+            }
+        }
+        System.out.println(mayor+" mayor que 0");
+        System.out.println(menor+" menor que 0");
+        System.out.println(cero+" iguales que 0");
+    }
+    public void bateriapre2(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Introduzca un numero");
+        int num1=entrada.nextInt();
+        int num2;
+        do {
+            System.out.println("Introduzca otro numero");
+            num2=entrada.nextInt();
+            if (num2<0){
+                System.out.println("ERROR: no se permiten negativos");
+            }
+        }while (num2<0);
+        int resultado = 1;
+        if (num2==0){
+            resultado=1;
+        }else {
+            for (int i=num2;i!=0;i--){
+                resultado=resultado*num1;
+            }
+        }
+        System.out.println("El resultado es: "+resultado);
+
+    }
+    public void bateriapre3(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("¿Cuantos meses financió?");
+        int mes=entrada.nextInt();
+        System.out.println("Financiación a "+mes+" meses");
+        int cant=10;
+        int tot=0;
+        for (int i=1;i<=mes;i++){
+            System.out.println("Mes "+i+": "+cant+"€");
+            tot=tot+cant;
+            cant=cant*2;
+        }
+        System.out.println("Total a pagar: "+tot+"€");
+    }
+    public void bateriapre4(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Meta su nota");
+        double nota=entrada.nextDouble();
+        String notat=String.valueOf(nota);
+        int notat1= notat.indexOf(".");
+        String dect = notat.substring(notat1+1);
+        notat=notat.substring(0,notat1);
+        int notai=Integer.valueOf(notat);
+        int dec=Integer.valueOf(dect);
+        if (dec>=5){
+            notai=notai+1;
+        }
+        switch (notai){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4: System.out.println("INSUFICIENTE");break;
+            case 5: System.out.println("SUFICIENTE");break;
+            case 6: System.out.println("BIEN");break;
+            case 7:
+            case 8: System.out.println("NOTABLE");break;
+            case 9:
+            case 10: System.out.println("SOBRESALIENTE");break;
+            default: System.out.println("No válido");break;
+        }
+    }
+    public void bateriapre5(){
+        Scanner entrada=new Scanner(System.in);
+        int sueldo;
+        int mil=0;
+        int mayor=0;
+        for(int i=5;i!=0;i--){
+            System.out.println("Introduzca el sueldo");
+            sueldo=entrada.nextInt();
+            if (sueldo>1000){
+                mil=mil+1;
+            }
+            if (mayor>sueldo){
+                mayor=sueldo;
+            }
+        }
+        System.out.println("El mayor sueldo es de "+ mayor);
+        System.out.println("Y hay "+mil+" sueldo mayores a 1.000€");
+    }
+    public void bateriapre6(){}
 }
