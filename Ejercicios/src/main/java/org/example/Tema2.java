@@ -475,14 +475,19 @@ public class Tema2 {
     }
     public void bateriapre7(){
         Scanner entrada=new Scanner(System.in);
-        int num;
+        int num=-1;
         do {
             System.out.println("¿Cuantos numeros quiere?");
-            num=entrada.nextInt();
-            if (num<0){
-                System.out.println("ERROR: no puede ser el numero negativo");
+            try{
+                num=entrada.nextInt();
+                if (num<=0){
+                    System.out.println("ERROR: numero no valido detectado");
+                }
+            }catch (InputMismatchException err){
+                System.out.println("ERROR: no se a colocado un numero ");
+                entrada.nextLine();
             }
-        }while (num<0);
+        }while (num<=0);
         int num1=0;
         int num2=1;
         int temp=0;
