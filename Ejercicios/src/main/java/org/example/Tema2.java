@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Tema2 {
+    /*Ejercicios*/
     public void ejercicio1(){
         System.out.println("INTRODUCE UNA PALABRA O FRASE");
         Scanner entrada=new Scanner(System.in);
@@ -85,6 +86,7 @@ public class Tema2 {
             System.out.println("Lo siento, no has acertado ninguna palabra");
         }
     }
+    /*Actividades*/
     public void actividad1(){
         Scanner entrada = new Scanner(System.in);
         LocalDateTime hoy = LocalDateTime.now();
@@ -159,6 +161,7 @@ public class Tema2 {
             System.out.println("No eres de ninguna generación");
         }
     }
+    /*Ejercicos Azules*/
     public void ejercicioAzul1(){
         System.out.println("Introduzca su altura (en cm):");
         Scanner entrada = new Scanner(System.in);
@@ -208,12 +211,14 @@ public class Tema2 {
             default: System.out.println("Nada");break;
         }
     }
+    /*Ternaria*/
     public void ternaria(){
         int a=1, b=2, c=4;
         int resultado = b++ == c && a++ > b ? b -= a :
                             c<10 && b>=a? c+=b :
                                     a==c ? b++ : b--;
     }
+    /*Bateria de Ejercicios*/
     public void bateria1(){
         Scanner entrada = new Scanner(System.in);
         String psw = "augusto";
@@ -290,6 +295,7 @@ public class Tema2 {
         }
         System.out.println(otxet);
     }
+    /*Ejercicios con Random*/
     public void random1(){
         Random random = new Random();
         int dado1 = random.nextInt(6)+1;
@@ -342,6 +348,7 @@ public class Tema2 {
         }
         System.out.println("Tu nueva contraseña es: "+contrasena);
     }
+    /*Bateria de ejercicios pre-examen*/
     public void bateriapre1(){
         Scanner entrada = new Scanner(System.in);
         System.out.println("Introduzca cuantas veces quiere meter numeros:");
