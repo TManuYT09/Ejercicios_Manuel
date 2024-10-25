@@ -55,7 +55,8 @@ public class Main {
 //        tema2.bateriapre2();
 //        tema2.bateriapre3();
 //        tema2.bateriapre4();
-        tema2.bateriapre5();
+//        tema2.bateriapre5();
 //        tema2.bateriapre6();
+        tema2.bateriapre7();
     }
 }

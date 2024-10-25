@@ -443,12 +443,56 @@ public class Tema2 {
             if (sueldo>1000){
                 mil=mil+1;
             }
-            if (mayor>sueldo){
+            if (sueldo>mayor){
                 mayor=sueldo;
             }
         }
         System.out.println("El mayor sueldo es de "+ mayor);
         System.out.println("Y hay "+mil+" sueldo mayores a 1.000€");
     }
-    public void bateriapre6(){}
+    public void bateriapre6(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Introduzca cuandos alumnos quieres meter: ");
+        int num=entrada.nextInt();
+        int edad;
+        int altura;
+        int masaltura=0;
+        int masedad=0;
+        for (int i=1;i<=num;i++){
+            System.out.println("¿Cuantos años tiene el "+i+"º alumno?");
+            edad= entrada.nextInt();
+            if (edad>=18){
+                masedad++;
+            }
+            System.out.println("¿Cuanto mide el "+i+"º alumno?");
+            altura=entrada.nextInt();
+            if (altura>=175){
+                masaltura++;
+            }
+        }
+        System.out.println("Hay "+masedad+" que son mayores de 18 años");
+        System.out.println("Hay "+masaltura+" que miden más de 175cm");
+    }
+    public void bateriapre7(){
+        Scanner entrada=new Scanner(System.in);
+        int num;
+        do {
+            System.out.println("¿Cuantos numeros quiere?");
+            num=entrada.nextInt();
+            if (num<0){
+                System.out.println("ERROR: no puede ser el numero negativo");
+            }
+        }while (num<0);
+        int num1=0;
+        int num2=1;
+        int temp=0;
+        System.out.println("Secuencia de Números:");
+        for (int i=0;i<num;i++){
+            System.out.println(num1);
+            num1=num2;
+            num2=temp;
+            temp=num1;
+            num2=num2+temp;
+        }
+    }
 }
