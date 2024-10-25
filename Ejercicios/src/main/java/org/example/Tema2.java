@@ -458,22 +458,26 @@ public class Tema2 {
         int altura;
         int masaltura=0;
         int masedad=0;
-        int media=0;
+        int mediaa=0;
+        int medae=0;
         for (int i=1;i<=num;i++){
             System.out.println("¿Cuantos años tiene el "+i+"º alumno?");
             edad= entrada.nextInt();
             if (edad>=18){
                 masedad++;
             }
+            medae=medae+edad;
             System.out.println("¿Cuanto mide el "+i+"º alumno?");
             altura=entrada.nextInt();
             if (altura>=175){
                 masaltura++;
             }
-            media=media+altura;
+            mediaa=mediaa+altura;
         }
-        media=media/num;
-        System.out.println("La media de altura es de "+media);
+        mediaa=mediaa/num;
+        medae=medae/num;
+        System.out.println("La edad media es de "+medae);
+        System.out.println("La media de altura es de "+mediaa);
         System.out.println("Hay "+masedad+" que son mayores de 18 años");
         System.out.println("Hay "+masaltura+" que miden más de 175cm");
     }
