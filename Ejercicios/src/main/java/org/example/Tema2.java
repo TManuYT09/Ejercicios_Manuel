@@ -351,15 +351,35 @@ public class Tema2 {
     /*Bateria de ejercicios pre-examen*/
     public void bateriapre1(){
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Introduzca cuantas veces quiere meter numeros:");
-        int cantidad = entrada.nextInt();
-        int num;
+        int cantidad=0;
+        boolean comp=false;
+        do {
+            try{
+                System.out.println("Introduzca cuantas veces quiere meter numeros:");
+                cantidad = entrada.nextInt();
+                comp=false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR: valor introducido no es un numero");
+                comp=true;
+                entrada.nextLine();
+            }
+        }while(comp);
+        int num=0;
         int mayor=0;
         int menor=0;
         int cero=0;
         for (int i=cantidad;i!=0;i--){
-            System.out.println("Introduzca un numero");
-            num=entrada.nextInt();
+            do {
+                try{
+                    System.out.println("Introduzca un numero");
+                    num=entrada.nextInt();
+                    comp=false;
+                }catch (InputMismatchException err){
+                    System.out.println("ERROR: valor introducido no es un numero");
+                    comp=true;
+                    entrada.nextLine();
+                }
+            }while(comp);
             if (num>0){
                 mayor=mayor+1;
             }else {
@@ -376,12 +396,32 @@ public class Tema2 {
     }
     public void bateriapre2(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println("Introduzca un numero");
-        int num1=entrada.nextInt();
-        int num2;
+        int num1=0;
+        boolean comp=false;
         do {
-            System.out.println("Introduzca otro numero");
-            num2=entrada.nextInt();
+            try {
+                System.out.println("Introduzca un numero");
+                num1=entrada.nextInt();
+                comp=false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR valor introducido no es un numero");
+                comp=true;
+                entrada.nextLine();
+            }
+        }while (comp);
+        int num2=0;
+        do {
+            do {
+                try {
+                    System.out.println("Introduzca otro numero");
+                    num2=entrada.nextInt();
+                    comp=false;
+                }catch (InputMismatchException err){
+                    System.out.println("ERROR valor introducido no es un numero");
+                    comp=true;
+                    entrada.nextLine();
+                }
+            }while (comp);
             if (num2<0){
                 System.out.println("ERROR: no se permiten negativos");
             }
@@ -399,8 +439,19 @@ public class Tema2 {
     }
     public void bateriapre3(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println("¿Cuantos meses financió?");
-        int mes=entrada.nextInt();
+        int mes=0;
+        boolean comp=false;
+        do {
+            try{
+                System.out.println("¿Cuantos meses financió?");
+                mes=entrada.nextInt();
+                comp=false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR el valor introducido no es un numero");
+                entrada.nextLine();
+                comp=true;
+            }
+        }while (comp);
         System.out.println("Financiación a "+mes+" meses");
         int cant=10;
         int tot=0;
@@ -413,8 +464,19 @@ public class Tema2 {
     }
     public void bateriapre4(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println("Meta su nota");
-        double nota=entrada.nextDouble();
+        boolean comp=false;
+        double nota=0;
+        do {
+            try {
+                System.out.println("Meta su nota");
+                nota=entrada.nextDouble();
+                comp=false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR el valor introducido no es un numero");
+                comp=true;
+                entrada.nextLine();
+            }
+        }while (comp);
         String notat=String.valueOf(nota);
         int notat1= notat.indexOf(".");
         String dect = notat.substring(notat1+1);
@@ -441,12 +503,23 @@ public class Tema2 {
     }
     public void bateriapre5(){
         Scanner entrada=new Scanner(System.in);
-        int sueldo;
+        int sueldo=0;
         int mil=0;
         int mayor=0;
+        boolean comp=false;
         for(int i=5;i!=0;i--){
             System.out.println("Introduzca el sueldo");
-            sueldo=entrada.nextInt();
+            do {
+                try{
+                    sueldo=entrada.nextInt();
+                    comp=false;
+                }catch (InputMismatchException err){
+                    System.out.println("ERROR el valor introducido no es un numero");
+                    comp=true;
+                    entrada.nextLine();
+                    System.out.println("Introduzca un sueldo válido");
+                }
+            }while (comp);
             if (sueldo>1000){
                 mil=mil+1;
             }
@@ -459,26 +532,58 @@ public class Tema2 {
     }
     public void bateriapre6(){
         Scanner entrada=new Scanner(System.in);
-        System.out.println("Introduzca cuandos alumnos quieres meter: ");
-        int num=entrada.nextInt();
-        int edad;
-        int altura;
+        int num=0;
+        boolean comp=false;
+        do {
+            try{
+                System.out.println("Introduzca cuandos alumnos quieres meter: ");
+                num=entrada.nextInt();
+                comp=false;
+            }catch (InputMismatchException err){
+                System.out.println("ERROR el valor introducido no es un número");
+                entrada.nextLine();
+                comp=true;
+            }
+        }while (comp);
+
+        int edad=0;
+        int altura=0;
         int masaltura=0;
         int masedad=0;
         int mediaa=0;
         int medae=0;
         for (int i=1;i<=num;i++){
             System.out.println("¿Cuantos años tiene el "+i+"º alumno?");
-            edad= entrada.nextInt();
+            do {
+                try{
+                    edad= entrada.nextInt();
+                    comp=false;
+                }catch (InputMismatchException err){
+                    System.out.println("ERROR la edad introducida no es valida");
+                    entrada.nextLine();
+                    comp=true;
+                    System.out.println("Indroduzca la edad correcta del "+i+"º alumno");
+                }
+            }while (comp);
+            System.out.println("¿Cuanto mide el "+i+"º alumno?");
+            do {
+                try{
+                    altura=entrada.nextInt();
+                    comp=false;
+                }catch (InputMismatchException err){
+                    System.out.println("ERROR la media introducida no es valida");
+                    entrada.nextLine();
+                    comp=true;
+                    System.out.println("Introduzca la medida correcta del "+i+"º alumno");
+                }
+            }while (comp);
             if (edad>=18){
                 masedad++;
             }
-            medae=medae+edad;
-            System.out.println("¿Cuanto mide el "+i+"º alumno?");
-            altura=entrada.nextInt();
             if (altura>=175){
                 masaltura++;
             }
+            medae=medae+edad;
             mediaa=mediaa+altura;
         }
         mediaa=mediaa/num;
