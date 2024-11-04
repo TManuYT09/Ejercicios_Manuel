@@ -1,6 +1,8 @@
 package org.example;
 
 
+import java.util.Vector;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -57,7 +59,14 @@ public class Main {
 //        tema2.bateriapre4();
 //        tema2.bateriapre5();
 //        tema2.bateriapre6();
-        tema2.bateriapre7();
+//        tema2.bateriapre7();
 //        tema2.problema1();
+
+        /*Tema 3*/
+//        Vectores vectores = new Vectores();
+//        vectores.vectores();
+
+        Tema3 tema3 = new Tema3();
+        tema3.ejercicio1();;
     }
 }
