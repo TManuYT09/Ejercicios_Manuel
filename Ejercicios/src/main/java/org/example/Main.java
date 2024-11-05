@@ -63,11 +63,14 @@ public class Main {
 //        tema2.problema1();
 
         /*Tema 3*/
-//        Vectores vectores = new Vectores();
+        Vectores vectores = new Vectores();
 //        vectores.vectores();
+//        vectores.vectores_evo();
 
         Tema3 tema3 = new Tema3();
 //        tema3.ejercicio1();
-        tema3.ejercicio2();
+//        tema3.ejercicio2();
+//        tema3.ejercicio3();
+        tema3.ejercicio4();
     }
 }
