@@ -67,6 +67,7 @@ public class Main {
 //        vectores.vectores();
 
         Tema3 tema3 = new Tema3();
-        tema3.ejercicio1();;
+//        tema3.ejercicio1();
+        tema3.ejercicio2();
     }
 }
