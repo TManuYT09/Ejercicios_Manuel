@@ -71,6 +71,11 @@ public class Main {
 //        tema3.ejercicio1();
 //        tema3.ejercicio2();
 //        tema3.ejercicio3();
-        tema3.ejercicio4();
+//        tema3.ejercicio4();
+//        tema3.ejercicio5();
+//        tema3.ejercicio6();
+//        tema3.ejercicio7();
+        tema3.ejercicio8();
+//        tema3.ejercicio9();
     }
 }
