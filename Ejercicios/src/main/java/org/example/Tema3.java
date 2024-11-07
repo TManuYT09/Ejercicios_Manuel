@@ -152,10 +152,8 @@ public class Tema3 {
         int pos=random.nextInt(numeros.length);
         System.out.println("En la posición "+ pos);
         System.out.println("Array resultante: ");
-
 //        System.arraycopy(numeros,0,resulta,0,resulta.length-pos);
-
-
+//        System.arraycopy(numeros,pos,resulta,pos,);
 
         for (int i=0;i<resulta.length-1;i++){
             if (i==pos){
