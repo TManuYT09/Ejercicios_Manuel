@@ -75,7 +75,8 @@ public class Main {
 //        tema3.ejercicio5();
 //        tema3.ejercicio6();
 //        tema3.ejercicio7();
-        tema3.ejercicio8();
+//        tema3.ejercicio8();
 //        tema3.ejercicio9();
+        tema3.ejercicio10();
     }
 }

@@ -153,7 +153,7 @@ public class Tema3 {
         System.out.println("En la posición "+ pos);
         System.out.println("Array resultante: ");
 //        System.arraycopy(numeros,0,resulta,0,resulta.length-pos);
-//        System.arraycopy(numeros,pos,resulta,pos,);
+//        System.arraycopy(numeros,pos,resulta,pos,resulta.length-pos);
 
         for (int i=0;i<resulta.length-1;i++){
             if (i==pos){
@@ -179,6 +179,21 @@ public class Tema3 {
             }
         }
         System.out.println(palabra);
+    }
+    public void ejercicio10(){
+        Scanner entrada=new Scanner(System.in);
+        String palabras[]=new String[5];
+        System.out.println("Introduzca 5 letras");
+        for (int i=0;i<palabras.length;i++){
+            palabras[i]=entrada.next();
+        }
+        System.out.println("Introduzca una letra");
+        char letra = entrada.next().charAt(0);
+        for (String palabra : palabras) {
+            if (palabra.charAt(0) == letra) {
+                System.out.println(palabra);
+            }
+        }
     }
 
 }
