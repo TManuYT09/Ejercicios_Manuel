@@ -231,7 +231,7 @@ public class Tema3 {
         String color_ganador;
         String opcion_ganador;
         boolean comp=false;
-        int num=0;
+        int num;
         String color="";
         String opcion="";
         System.out.println("Introduzca un numeros");
