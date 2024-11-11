@@ -195,5 +195,100 @@ public class Tema3 {
             }
         }
     }
+    public void navidad(){
+        Scanner entrada=new Scanner(System.in);
+        final String palabra = "NAVIDAD";
+        String palabras[] = palabra.split("");
 
+        System.out.println("Introduce cuantas letras quieres en la palabra "+palabra+"...");
+        String num=entrada.nextLine();
+
+        String cantidades[] = num.split(" ");
+
+        System.out.println(Arrays.toString(cantidades));
+        System.out.println(Arrays.toString(palabras));
+        String resultado="";
+
+        if (cantidades.length==palabras.length){
+            for (int i=0;i< cantidades.length;i++){
+                for (int j=0;j<Integer.parseInt(cantidades[i]);j++){
+                    resultado=resultado+palabras[i];
+                }
+            }
+            System.out.println(resultado);
+        }else {
+            System.out.println("no hay un numero por letra");
+        }
+    }
+    public void ruleta(){
+        Scanner entrada=new Scanner(System.in);
+        Random random=new Random();
+        String colores[]={"rojo", "negro"};
+        int numeros[]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36};
+        String opciones[]={"par","impar"};
+        int num_ganador;
+        int num_color;
+        String color_ganador;
+        String opcion_ganador;
+        boolean comp=false;
+        int num=0;
+        String color="";
+        String opcion="";
+        System.out.println("Introduzca un numeros");
+        num=entrada.nextInt();
+        if (Arrays.asList(numeros).contains(num)){
+            if (num>0){
+                System.out.println("Introduzca un color");
+                color=entrada.next();
+                color=color.trim();
+                color=color.toLowerCase();
+                if (Arrays.asList(colores).contains(color)){
+                    System.out.println("Introduzca su opcion (par o impar)");
+                    opcion=entrada.next();
+                    opcion=opcion.trim();
+                    opcion=opcion.toLowerCase();
+                    if (Arrays.asList(opciones).contains(opcion)) {
+                        comp=true;
+                    }else {
+                        System.out.println("ERROR, opcion no valida");
+                        comp=false;
+                    }
+                }else {
+                    System.out.println("ERROR, color no valido");
+                }
+            }else {
+                comp=true;
+            }
+            if (comp){
+                num_ganador= random.nextInt(numeros.length);
+                num_color= random.nextInt(colores.length);
+                color_ganador=colores[num_color];
+                if (num_ganador%2==0){
+                    opcion_ganador=opciones[0];
+                }else {
+                    opcion_ganador=opciones[1];
+                }
+                System.out.println("El color que a salido es: "+ color_ganador);
+                System.out.println("La opcion que a salido es: "+ opcion_ganador);
+                System.out.println("El numero que a salido es: "+ num_ganador);
+                if (color_ganador==color&&opcion_ganador==opcion){
+                    System.out.println("GANADOR");
+                } else if (color_ganador==color) {
+                    System.out.println("Has acertado el color");
+                } else if (opcion_ganador==opcion) {
+                    System.out.println("Has acertado que es "+opcion_ganador);
+                } else if (num_ganador==num) {
+                    if (num==0){
+                        System.out.println("HA GANADOR");
+                    }else {
+                        System.out.println("Has acertado el numero");
+                    }
+                }else {
+                    System.out.println("Has perdido");
+                }
+            }
+        }else {
+            System.out.println("ERROR, numero no valido");
+        }
+    }
 }

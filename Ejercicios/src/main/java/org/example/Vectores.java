@@ -51,4 +51,22 @@ public class Vectores {
         System.arraycopy(palabras,0,palabras_corto, 0,2);
         System.out.println(Arrays.toString(palabras_corto));
     }
+    public void buscar(){
+        String nombres[]={"Paco", "Pepe", "Ximo", "Alfonso"};
+        String palabra_buscar = "Pepe";
+        boolean existe = Arrays.asList(nombres).contains(palabra_buscar);
+        if (existe){
+            System.out.println(palabra_buscar+" existe");
+        }else {
+            System.out.println(palabra_buscar+" no existe");
+        }
+        Integer numeros[]={3,5,6,8,24,56};
+        int num = 25;
+        boolean num_existe = Arrays.asList(numeros).contains(num);
+        if (num_existe){
+            System.out.println(num+" existe");
+        }else {
+            System.out.println(num+" no existe");
+        }
+    }
 }

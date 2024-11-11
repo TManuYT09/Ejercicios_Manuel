@@ -66,6 +66,7 @@ public class Main {
         Vectores vectores = new Vectores();
 //        vectores.vectores();
 //        vectores.vectores_evo();
+//        vectores.buscar();
 
         Tema3 tema3 = new Tema3();
 //        tema3.ejercicio1();
@@ -77,6 +78,8 @@ public class Main {
 //        tema3.ejercicio7();
 //        tema3.ejercicio8();
 //        tema3.ejercicio9();
-        tema3.ejercicio10();
+//        tema3.ejercicio10();
+//        tema3.navidad();
+        tema3.ruleta();
     }
 }
