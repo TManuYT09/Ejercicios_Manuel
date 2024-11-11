@@ -270,11 +270,11 @@ public class Tema3 {
                 System.out.println("El color que a salido es: "+ color_ganador);
                 System.out.println("La opcion que a salido es: "+ opcion_ganador);
                 System.out.println("El numero que a salido es: "+ num_ganador);
-                if (color_ganador==color&&opcion_ganador==opcion){
+                if (color_ganador.equals(color)&&opcion_ganador.equals(opcion)){
                     System.out.println("GANADOR");
-                } else if (color_ganador==color) {
+                } else if (color_ganador.equals(color)) {
                     System.out.println("Has acertado el color");
-                } else if (opcion_ganador==opcion) {
+                } else if (opcion_ganador.equals(opcion)) {
                     System.out.println("Has acertado que es "+opcion_ganador);
                 } else if (num_ganador==num) {
                     if (num==0){
