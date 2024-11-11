@@ -267,9 +267,7 @@ public class Tema3 {
                 }else {
                     opcion_ganador=opciones[1];
                 }
-                System.out.println("El color que a salido es: "+ color_ganador);
-                System.out.println("La opcion que a salido es: "+ opcion_ganador);
-                System.out.println("El numero que a salido es: "+ num_ganador);
+                System.out.println("Ha tocado"+num_ganador+" "+color_ganador+" "+opcion_ganador);
                 if (color_ganador.equals(color)&&opcion_ganador.equals(opcion)){
                     System.out.println("GANADOR");
                 } else if (color_ganador.equals(color)) {
