@@ -310,28 +310,14 @@ public class Tema3 {
             Arrays.sort(original);
 
             for (int i=0;i<original.length-1;i++){
-                if (original[i]==original[i+1]&&original[i]!=0) {
+                if (original[i]==original[i+1]&& original[i]!=0) {
                     comp=true;
                     break;
                 }else {
                     comp=false;
                 }
             }
-
-            int cero=0;
-
-            for (int i=0;i<original.length;i++){
-                if (original[i]==0) {
-                    cero++;
-                }
-            }
         }while (comp);
-
-        for (int i=0;i<original.length-1;i++){
-            if (original[i]==original[i+1]) {
-                original[i + 1] = 0;
-            }
-        }
 
         Arrays.sort(original);
         int cero=0;
