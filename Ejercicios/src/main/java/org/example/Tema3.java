@@ -288,4 +288,70 @@ public class Tema3 {
             System.out.println("ERROR, numero no valido");
         }
     }
+    public void duplicacion(){
+        Random random = new Random();
+        int original[]=new int[random.nextInt(10)+1];
+
+        for (int i=0;i<original.length;i++){
+            original[i]= random.nextInt(10)+1;
+        }
+
+        System.out.println(Arrays.toString(original));
+        Arrays.sort(original);
+        boolean comp=false;
+
+        do {
+            for (int i=0;i<original.length-1;i++){
+                if (original[i]==original[i+1]) {
+                    original[i + 1] = 0;
+                }
+            }
+
+            Arrays.sort(original);
+
+            for (int i=0;i<original.length-1;i++){
+                if (original[i]==original[i+1]&&original[i]!=0) {
+                    comp=true;
+                    break;
+                }else {
+                    comp=false;
+                }
+            }
+
+            int cero=0;
+
+            for (int i=0;i<original.length;i++){
+                if (original[i]==0) {
+                    cero++;
+                }
+            }
+        }while (comp);
+
+        for (int i=0;i<original.length-1;i++){
+            if (original[i]==original[i+1]) {
+                original[i + 1] = 0;
+            }
+        }
+
+        Arrays.sort(original);
+        int cero=0;
+
+        for (int i=0;i<original.length;i++){
+            if (original[i]==0) {
+                cero++;
+            }
+        }
+
+        int sin_duplicados[]=new int[original.length-cero];
+        int pos=0;
+
+        for (int i=0;i< original.length;i++){
+            if (original[i]!=0){
+                sin_duplicados[pos]=original[i];
+                pos++;
+            }
+        }
+
+        System.out.println(Arrays.toString(sin_duplicados));
+    }
 }

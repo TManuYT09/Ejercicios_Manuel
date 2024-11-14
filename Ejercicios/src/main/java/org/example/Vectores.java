@@ -69,4 +69,33 @@ public class Vectores {
             System.out.println(num+" no existe");
         }
     }
+    public void prueba(){
+        int array[]={3,8,5,6,10};
+        System.out.println(Arrays.toString(array));
+        for (int i = 0; i < array.length-1; i++) {
+            System.out.println("i="+i);
+            for (int j = i+1; j < array.length ; j++) {
+                System.out.println("j="+j);
+                System.out.println(array[j]+">"+array[i]);
+                if (array[j]>array[i]){
+                    int aux = array[j];
+                    System.out.println(aux);
+                    array[j] = array[i];
+                    System.out.println(Arrays.toString(array));
+                    array[i] = aux;
+                    System.out.println(Arrays.toString(array));
+                }
+            }
+        }
+    }
+    public void ordenacion(){
+        int vector[]={7,8,1,4,6};
+        int numero = 4;
+        int posicion=Arrays.binarySearch(vector,numero);
+        System.out.println(posicion);
+        Arrays.sort(vector);
+        System.out.println(Arrays.toString(vector));
+        posicion=Arrays.binarySearch(vector,numero);
+        System.out.println(posicion);
+    }
 }
