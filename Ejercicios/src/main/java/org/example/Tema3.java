@@ -295,9 +295,10 @@ public class Tema3 {
         for (int i=0;i<original.length;i++){
             original[i]= random.nextInt(10)+1;
         }
-
+        
         System.out.println(Arrays.toString(original));
         Arrays.sort(original);
+        System.out.println(Arrays.toString(original));
         boolean comp=false;
 
         do {
@@ -310,7 +311,7 @@ public class Tema3 {
             Arrays.sort(original);
 
             for (int i=0;i<original.length-1;i++){
-                if (original[i]==original[i+1]&& original[i]!=0) {
+                if (original[i]==original[i+1]&&original[i]!=0) {
                     comp=true;
                     break;
                 }else {
@@ -319,7 +320,6 @@ public class Tema3 {
             }
         }while (comp);
 
-        Arrays.sort(original);
         int cero=0;
 
         for (int i=0;i<original.length;i++){
