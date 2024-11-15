@@ -295,7 +295,7 @@ public class Tema3 {
         for (int i=0;i<original.length;i++){
             original[i]= random.nextInt(10)+1;
         }
-        
+
         System.out.println(Arrays.toString(original));
         Arrays.sort(original);
         System.out.println(Arrays.toString(original));

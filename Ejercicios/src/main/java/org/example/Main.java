@@ -69,6 +69,7 @@ public class Main {
 //        vectores.buscar();
 //        vectores.prueba();
 //        vectores.ordenacion();
+        vectores.prueba_distinc();
 
         Tema3 tema3 = new Tema3();
 //        tema3.ejercicio1();
@@ -83,6 +84,6 @@ public class Main {
 //        tema3.ejercicio10();
 //        tema3.navidad();
 //        tema3.ruleta();
-        tema3.duplicacion();
+//        tema3.duplicacion();
     }
 }

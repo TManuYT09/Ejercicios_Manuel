@@ -98,4 +98,10 @@ public class Vectores {
         posicion=Arrays.binarySearch(vector,numero);
         System.out.println(posicion);
     }
+    public void prueba_distinc(){
+        int original[]={1,1,2,2,3,4,9,9};
+        System.out.println(Arrays.toString(original));
+        int limpio[]= Arrays.stream(original).distinct().toArray();
+        System.out.println(Arrays.toString(limpio));
+    }
 }
