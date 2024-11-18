@@ -340,4 +340,39 @@ public class Tema3 {
 
         System.out.println(Arrays.toString(sin_duplicados));
     }
+    public void bateria2(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Introduzca un numero:");
+        int num=entrada.nextInt();
+        System.out.println("Altura: "+num);
+        String texto="";
+        for (int i=1;i<=num;i++){
+            for (int j=i;j!=0;j--){
+                texto=texto+"*";
+            }
+            System.out.println(texto);
+            texto="";
+        }
+    }
+    public void bateria3(){
+        for (int i=1;i<=10;i++){
+            for (int j=1;j<=10;j++){
+                System.out.println(i+" x "+j+" = "+(i*j));
+            }
+            System.out.println("");
+        }
+    }
+    public void bateria4(){
+        Scanner entrada=new Scanner(System.in);
+        System.out.println("Introduzca el valor m:");
+        int num=entrada.nextInt();
+        boolean comp=false;
+        String texto= "2 ";
+        for (int i=2;i<num;i++){
+            if (i%2!=0){
+                texto=texto+String.valueOf(i)+" ";
+            }
+        }
+        System.out.println("Números primos: "+texto.trim());
+    }
 }
