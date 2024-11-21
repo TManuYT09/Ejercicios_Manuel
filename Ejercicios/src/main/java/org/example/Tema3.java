@@ -365,13 +365,16 @@ public class Tema3 {
     public void bateria4(){
         Scanner entrada=new Scanner(System.in);
         System.out.println("Introduzca el valor m:");
-        int num=entrada.nextInt();
-        boolean comp=false;
-        String texto= "2 ";
-        for (int i=2;i<num;i++){
-            if (i%2!=0){
-                texto=texto+String.valueOf(i)+" ";
+        int m=entrada.nextInt();
+        String texto= "";
+        bucle:
+        for (int i=2;i<=m;i++){
+            for (int j=2;j<i;j++){
+                if(i%j==0){
+                    continue bucle;
+                }
             }
+            texto=texto+String.valueOf(i)+" ";
         }
         System.out.println("Números primos: "+texto.trim());
     }
