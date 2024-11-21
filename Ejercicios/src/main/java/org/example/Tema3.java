@@ -1,5 +1,6 @@
 package org.example;
 
+import java.awt.desktop.SystemEventListener;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -378,57 +379,82 @@ public class Tema3 {
         }
         System.out.println("Números primos: "+texto.trim());
     }
-    public void matrices(){
-        Random random=new Random();
-        int fila=4;
-        int columna=4;
-
-        int[][] matriza=new int[4][4];
-        int[][] matrizb=new int[fila][columna];
-
-        for (int i=0;i<matriza.length;i++){
-            for (int j=0;j<matriza[i].length;j++){
-                matriza[i][j]=random.nextInt(10);
+    public void matrices1(){
+        Scanner entrada=new Scanner(System.in);
+        int matriz[][]=new int[3][3];
+        System.out.println("Introduzca los valores que contengala matriz:");
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                System.out.println("Posición ("+i+", "+j+")");
+                matriz[i][j]=entrada.nextInt();
             }
         }
+        System.out.println("¿Que numero quieres buscar?");
+        int num=entrada.nextInt();
 
-        for (int i=0;i<matriza.length;i++){
-            for (int j=0;j<matriza[i].length;j++){
-                matrizb[i][j]=random.nextInt(10);
+        System.out.println("Matriz:");
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                System.out.print(matriz[i][j]+" ");
             }
+            System.out.print("\n");
         }
-
-        int[][] matrizm=new int[matriza.length][matriza[0].length];
-
-        for (int i=0;i<matrizm.length;i++){
-            for (int j=0;j<matrizm[i].length;j++){
-                if (matriza[i][j]>matrizb[i][j]){
-                    matrizm[i][j]=matriza[i][j];
-                }else {
-                    matrizm[i][j]=matrizb[i][j];
+        System.out.println("Número a buscar: "+num);
+        System.out.println("Salida:");
+        int columna=-1;
+        int fila=-1;
+        filas:
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                if (matriz[i][j]==num){
+                    columna=j;
+                    fila=i;
+                    break filas;
                 }
             }
         }
+        if (columna>-1||fila>-1){
+            System.out.println("El número "+num+" se encuentra en la posición ("+fila+", "+columna+")");
+        }else {
+            System.out.println("El número "+num+" no se encuentra");
+        }
 
-        for (int i=0;i<matriza.length;i++){
-            for (int j=0;j<matriza.length;j++){
-                System.out.print(matriza[i][j]+" ");
+    }
+    public void matrices2(){
+        Random random=new Random();
+        int temp=random.nextInt(5)+1;
+        int matriz[][]=new int[temp][temp];
+
+        System.out.println("Matriz:");
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                matriz[i][j]=random.nextInt(9)+1;
+                System.out.print(matriz[i][j]+" ");
             }
             System.out.print("\n");
         }
-        System.out.print("\n");
-        for (int i=0;i<matrizb.length;i++){
-            for (int j=0;j<matrizb.length;j++){
-                System.out.print(matrizb[i][j]+" ");
+
+        System.out.println("Suma de filas:");
+        int total=0;
+        int fila=1;
+        int columna=1;
+        for (int i=0;i<matriz.length;i++){
+            total=0;
+            for (int j=0;j<matriz[i].length;j++) {
+                total=total+matriz[i][j];
             }
-            System.out.print("\n");
+            System.out.println("Fila "+fila+": "+total);
+            fila++;
         }
-        System.out.print("\n");
-        for (int i=0;i<matrizm.length;i++){
-            for (int j=0;j<matrizm.length;j++){
-                System.out.print(matrizm[i][j]+" ");
+        for (int i=0;i<matriz.length;i++){
+            total=0;
+            for (int j=0;j< matriz[i].length;j++){
+                
             }
-            System.out.print("\n");
         }
+
+    }
+    public void matrices3(){
+
     }
 }

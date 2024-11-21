@@ -2,6 +2,7 @@ package org.example;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Vectores {
@@ -191,6 +192,59 @@ public class Vectores {
                 }else {
                     System.out.print("- ");
                 }
+            }
+            System.out.print("\n");
+        }
+    }
+    public void matriz3(){
+        Random random=new Random();
+        int fila=4;
+        int columna=4;
+
+        int[][] matriza=new int[4][4];
+        int[][] matrizb=new int[fila][columna];
+
+        for (int i=0;i<matriza.length;i++){
+            for (int j=0;j<matriza[i].length;j++){
+                matriza[i][j]=random.nextInt(10);
+            }
+        }
+
+        for (int i=0;i<matriza.length;i++){
+            for (int j=0;j<matriza[i].length;j++){
+                matrizb[i][j]=random.nextInt(10);
+            }
+        }
+
+        int[][] matrizm=new int[matriza.length][matriza[0].length];
+
+        for (int i=0;i<matrizm.length;i++){
+            for (int j=0;j<matrizm[i].length;j++){
+                if (matriza[i][j]>matrizb[i][j]){
+                    matrizm[i][j]=matriza[i][j];
+                }else {
+                    matrizm[i][j]=matrizb[i][j];
+                }
+            }
+        }
+
+        for (int i=0;i<matriza.length;i++){
+            for (int j=0;j<matriza.length;j++){
+                System.out.print(matriza[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+        for (int i=0;i<matrizb.length;i++){
+            for (int j=0;j<matrizb.length;j++){
+                System.out.print(matrizb[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+        for (int i=0;i<matrizm.length;i++){
+            for (int j=0;j<matrizm.length;j++){
+                System.out.print(matrizm[i][j]+" ");
             }
             System.out.print("\n");
         }
