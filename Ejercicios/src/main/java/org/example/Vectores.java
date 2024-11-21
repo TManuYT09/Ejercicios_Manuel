@@ -1,6 +1,8 @@
 package org.example;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Vectores {
     public void vectores(){
@@ -105,6 +107,7 @@ public class Vectores {
         System.out.println(Arrays.toString(limpio));
     }
     public void matriz(){
+        Scanner teclado = new Scanner(System.in);
         int matriz[][] = new int[3][4];
 
         int matriz2[][] = {{12,32,44,1},{33,2,90,56}};
@@ -116,9 +119,80 @@ public class Vectores {
 
         for (int i = 0; i < matriz2.length; i++) {
             for (int j = 0; j < matriz2[i].length; j++) {
-                System.out.print(matriz2[i][j]);
+                System.out.print(matriz2[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+
+        for (int[] filas:matriz2){
+            System.out.println(Arrays.toString(filas));
+        }
+
+        for (int[] filas:matriz2){
+            for (int columnas : filas){
+                System.out.print(columnas+" ");
+            }
+            System.out.print("\n");
+        }
+
+        for (int i=0;i<matriz2.length;i++){
+            for (int j=0;j<matriz2[i].length;j++){
+                if (matriz2[i][j]==90){
+                    System.out.println("Existe el 90");
+                }
             }
         }
 
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                System.out.println("Dime el valor de la posición ("+i+","+j+"):");
+                matriz[i][j]= teclado.nextInt();
+            }
+        }
+
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+    }
+    public void matriz2(){
+        int matriz[][]=new int[5][5];
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                if(i==j){
+                    matriz[i][j]=1;
+                }
+            }
+        }
+        for (int[] filas:matriz){
+            for (int columnas:filas){
+                System.out.print(columnas+" ");
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+        for (int i=0;i<matriz.length;i++){
+            for (int j=0;j<matriz[i].length;j++){
+                if (matriz[i][j]==1){
+                    System.out.print("X ");
+                }else {
+                    System.out.print("- ");
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+        for (int i=0;i<matriz.length;i++){
+            for (int j=matriz[i].length-1;j>=0;j--){
+                if (matriz[i][j]==1){
+                    System.out.print("X ");
+                }else {
+                    System.out.print("- ");
+                }
+            }
+            System.out.print("\n");
+        }
     }
 }
