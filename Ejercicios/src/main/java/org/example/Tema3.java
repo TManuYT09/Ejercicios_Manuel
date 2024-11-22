@@ -467,8 +467,6 @@ public class Tema3 {
         num_asignaturas++;
 
         String matriz[][]=new String[num_estudiantes][num_asignaturas];
-        num_estudiantes--;
-        num_asignaturas--;
 
         matriz[0][0]="Estudiantes";
         String estudiante="";
@@ -512,7 +510,7 @@ public class Tema3 {
             for (int j = 1; j < matriz[i].length; j++) {
                 media+=Integer.valueOf(matriz[i][j]);
             }
-            media=media/num_asignaturas;
+            media=media/(num_asignaturas-1);
             System.out.println("La nota media del alumno "+ matriz[i][0]+" es "+media);
         }
 
@@ -521,7 +519,7 @@ public class Tema3 {
             for (int j = 1; j < matriz.length; j++) {
                 media+=Integer.valueOf(matriz[j][i]);
             }
-            media=media/num_estudiantes;
+            media=media/(num_estudiantes-1);
             System.out.println("La nota media de la asignatura "+ matriz[0][i]+" es "+media);
         }
     }
