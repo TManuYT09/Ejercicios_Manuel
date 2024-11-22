@@ -460,13 +460,11 @@ public class Tema3 {
 
         System.out.println("Hola! Cuántos estudiantes tienes?");
         int num_estudiantes= entrada.nextInt();
-        num_estudiantes++;
 
         System.out.println("Cuántas asignaturas tiene?");
         int num_asignaturas= entrada.nextInt();
-        num_asignaturas++;
 
-        String matriz[][]=new String[num_estudiantes][num_asignaturas];
+        String matriz[][]=new String[num_estudiantes+1][num_asignaturas+1];
 
         matriz[0][0]="Estudiantes";
         String estudiante="";
@@ -510,7 +508,7 @@ public class Tema3 {
             for (int j = 1; j < matriz[i].length; j++) {
                 media+=Integer.valueOf(matriz[i][j]);
             }
-            media=media/(num_asignaturas-1);
+            media=media/(num_asignaturas);
             System.out.println("La nota media del alumno "+ matriz[i][0]+" es "+media);
         }
 
@@ -519,7 +517,7 @@ public class Tema3 {
             for (int j = 1; j < matriz.length; j++) {
                 media+=Integer.valueOf(matriz[j][i]);
             }
-            media=media/(num_estudiantes-1);
+            media=media/(num_estudiantes);
             System.out.println("La nota media de la asignatura "+ matriz[0][i]+" es "+media);
         }
     }
