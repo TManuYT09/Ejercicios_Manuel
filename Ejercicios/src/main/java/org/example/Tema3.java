@@ -515,7 +515,7 @@ public class Tema3 {
         for (int i = 1; i < matriz[0].length; i++) {
             media=0;
             for (int j = 1; j < matriz.length; j++) {
-                media+=Integer.valueOf(matriz[j][i]);
+                media+=Integer.parseInt(matriz[j][i]);
             }
             media=media/(num_estudiantes);
             System.out.println("La nota media de la asignatura "+ matriz[0][i]+" es "+media);
