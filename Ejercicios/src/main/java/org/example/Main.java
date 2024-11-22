@@ -73,6 +73,7 @@ public class Main {
 //        vectores.matriz();
 //        vectores.matriz2();
 //        vectores.matriz3();
+        vectores.prueba_vectores();
 
         Tema3 tema3 = new Tema3();
 //        tema3.ejercicio1();
@@ -93,6 +94,6 @@ public class Main {
 //        tema3.bateria4();
 //        tema3.matrices1();
 //        tema3.matrices2();
-        tema3.matrices3();
+//        tema3.matrices3();
     }
 }

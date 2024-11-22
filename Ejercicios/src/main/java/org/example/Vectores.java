@@ -249,4 +249,55 @@ public class Vectores {
             System.out.print("\n");
         }
     }
+    public void prueba_vectores(){
+        Scanner entrada=new Scanner(System.in);
+
+        int vector[]={3,4,5,3,2};
+        int matriz[][]=new int[2][vector.length];
+
+        for (int i = 0; i < vector.length; i++) {
+            matriz[0][i]=vector[i];
+        }
+
+        for (int filas[]:matriz) {
+            for (int columnas:filas){
+                System.out.print(columnas+" ");
+            }
+            System.out.print("\n");
+        }
+
+        int matriz2[][]=new int[3][4];
+
+        for (int i = 0; i < matriz2.length; i++) {
+            System.out.println("Introduce valores de la fila: ");
+            String fila[]=entrada.next().split(",");
+            for (int j = 0; j < matriz2[i].length; j++) {
+                matriz2[i][j]=Integer.parseInt(fila[j]);
+            }
+        }
+
+        for (int filas[]:matriz2) {
+            for (int columnas:filas){
+                System.out.print(columnas+" ");
+            }
+            System.out.print("\n");
+        }
+
+        String matriz3[][]=new String[10][10];
+
+        for (int i = 0; i < matriz3.length; i++) {
+            System.out.println("Introduce valores de la fila: ");
+            String fila[]=entrada.next().toUpperCase().split("");
+            for (int j = 0; j < matriz3[i].length; j++) {
+                matriz3[i][j]=fila[j];
+            }
+        }
+
+        for (String fila[]:matriz3) {
+            for (String columna:fila){
+                System.out.print(columna+" ");
+            }
+            System.out.print("\n");
+        }
+    }
 }
