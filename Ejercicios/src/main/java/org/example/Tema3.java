@@ -477,7 +477,7 @@ public class Tema3 {
             }
         }
 
-        String asignaturas="";
+        String asignaturas;
         for (int i = 1; i < matriz[0].length; i++) {
             for (int j = 0; j < 1; j++) {
                 System.out.println("Introduce la asignatura "+ i);
@@ -486,7 +486,7 @@ public class Tema3 {
             }
         }
 
-        int nota=0;
+        int nota;
         for (int i = 1; i < matriz.length; i++) {
             for (int j = 1; j < matriz[i].length; j++) {
                 System.out.println("Inserta la nota de "+matriz[i][0]+" para la asignatura de "+matriz[0][j]);
@@ -502,7 +502,7 @@ public class Tema3 {
             System.out.print("\n");
         }
 
-        double media=0;
+        double media;
         for (int i = 1; i < matriz.length; i++) {
             media=0;
             for (int j = 1; j < matriz[i].length; j++) {
