@@ -92,6 +92,7 @@ public class Main {
 //        tema3.bateria3();
 //        tema3.bateria4();
 //        tema3.matrices1();
-        tema3.matrices2();
+//        tema3.matrices2();
+        tema3.matrices3();
     }
 }

@@ -423,38 +423,106 @@ public class Tema3 {
     public void matrices2(){
         Random random=new Random();
         int temp=random.nextInt(5)+1;
-        int matriz[][]=new int[temp][temp];
+        int matriz[][]=new int[random.nextInt(5)+1][random.nextInt(5)+1];
 
         System.out.println("Matriz:");
         for (int i=0;i<matriz.length;i++){
             for (int j=0;j<matriz[i].length;j++){
-                matriz[i][j]=random.nextInt(9)+1;
+                matriz[i][j]=random.nextInt(10)+1;
+                System.out.print(matriz[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+        System.out.print("\n");
+
+        System.out.println("Suma de filas:");
+        int total=0;
+        for (int i=0;i<matriz.length;i++){
+            total=0;
+            for (int j=0;j<matriz[i].length;j++) {
+                total+=matriz[i][j];
+            }
+            System.out.println("Fila "+(i+1)+": "+total);
+        }
+        System.out.print("\n");
+
+        System.out.println("Suma de columnas: ");
+        for (int i=0;i<matriz[0].length;i++){
+            total=0;
+            for (int j=0;j<matriz.length;j++){
+                total+=matriz[j][i];
+            }
+            System.out.println("Columna "+(i+1)+": "+total);
+        }
+    }
+    public void matrices3(){
+        Scanner entrada=new Scanner(System.in);
+
+        System.out.println("Hola! Cuántos estudiantes tienes?");
+        int num_estudiantes= entrada.nextInt();
+        num_estudiantes++;
+
+        System.out.println("Cuántas asignaturas tiene?");
+        int num_asignaturas= entrada.nextInt();
+        num_asignaturas++;
+
+        String matriz[][]=new String[num_estudiantes][num_asignaturas];
+        num_estudiantes--;
+        num_asignaturas--;
+
+        matriz[0][0]="Estudiantes";
+        String estudiante="";
+
+        for (int i = 0; i < 1; i++) {
+            for (int j = 1; j < matriz.length; j++) {
+                System.out.println("Introduce el nombre del estudiante "+ j);
+                estudiante=entrada.next();
+                matriz[j][i]=estudiante;
+            }
+        }
+
+        String asignaturas="";
+        for (int i = 1; i < matriz[0].length; i++) {
+            for (int j = 0; j < 1; j++) {
+                System.out.println("Introduce la asignatura "+ i);
+                asignaturas=entrada.next();
+                matriz[j][i]=asignaturas;
+            }
+        }
+
+        int nota=0;
+        for (int i = 1; i < matriz.length; i++) {
+            for (int j = 1; j < matriz[i].length; j++) {
+                System.out.println("Inserta la nota de "+matriz[i][0]+" para la asignatura de "+matriz[0][j]);
+                nota=entrada.nextInt();
+                matriz[i][j]= String.valueOf(nota);
+            }
+        }
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
                 System.out.print(matriz[i][j]+" ");
             }
             System.out.print("\n");
         }
 
-        System.out.println("Suma de filas:");
-        int total=0;
-        int fila=1;
-        int columna=1;
-        for (int i=0;i<matriz.length;i++){
-            total=0;
-            for (int j=0;j<matriz[i].length;j++) {
-                total=total+matriz[i][j];
+        double media=0;
+        for (int i = 1; i < matriz.length; i++) {
+            media=0;
+            for (int j = 1; j < matriz[i].length; j++) {
+                media+=Integer.valueOf(matriz[i][j]);
             }
-            System.out.println("Fila "+fila+": "+total);
-            fila++;
-        }
-        for (int i=0;i<matriz.length;i++){
-            total=0;
-            for (int j=0;j< matriz[i].length;j++){
-                
-            }
+            media=media/num_asignaturas;
+            System.out.println("La nota media del alumno "+ matriz[i][0]+" es "+media);
         }
 
-    }
-    public void matrices3(){
-
+        for (int i = 1; i < matriz[0].length; i++) {
+            media=0;
+            for (int j = 1; j < matriz.length; j++) {
+                media+=Integer.valueOf(matriz[j][i]);
+            }
+            media=media/num_estudiantes;
+            System.out.println("La nota media de la asignatura "+ matriz[0][i]+" es "+media);
+        }
     }
 }
