@@ -73,7 +73,7 @@ public class Main {
 //        vectores.matriz();
 //        vectores.matriz2();
 //        vectores.matriz3();
-        vectores.prueba_vectores();
+//        vectores.prueba_vectores();
 
         Tema3 tema3 = new Tema3();
 //        tema3.ejercicio1();
@@ -95,5 +95,12 @@ public class Main {
 //        tema3.matrices1();
 //        tema3.matrices2();
 //        tema3.matrices3();
+
+        /*Tema 4*/
+//        int grados = 17;
+//        int grados_kelvin=Metodos.gradoKelvin(grados);
+//        Metodos.prueba_mismaclase();
+//        System.out.println("Los "+ grados +" grados celsius convertidos a grados Kelvin son "+ grados_kelvin);
+        Bingo bingo=new Bingo();
     }
 }
