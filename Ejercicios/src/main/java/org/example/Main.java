@@ -106,6 +106,7 @@ public class Main {
 //        EjemploVarargs.principal();
 
 //        Bateria1Tema4.principal();
-        Bateria2Tema4.principal();
+//        Bateria2Tema4.principal();
+        Bateria3Tema4.principal();
     }
 }
