@@ -75,51 +75,51 @@ public class Bingo {
     }
 
     public void bingo2(){
-
-        System.out.print("\n");
-
-
-        System.out.println("PREMIOS: ");
-
-        System.out.print("\n");
-
-        //e)
-        //compruebo bingo
-        boolean haybingo = true;
-        bingo:
-        for (int i = 0; i < carton.length; i++) {
-            for (int j = 0; j < carton[0].length; j++) {
-
-                if(!Arrays.asList(vector).contains(carton[i][j])){
-                    System.out.println("No hay BINGO.");
-                    haybingo = false;
-                    break bingo;
-                }
-            }
-        }
-
-        if (haybingo){
-            System.out.println("HAY BINGO!!");
-            return;
-        }
-
-        //f)
-        //si no hay BINGO compruebo línea
-        linea:
-        for (int i = 0; i < carton.length; i++) {
-            for (int j = 0; j < carton[0].length; j++) {
-
-                if(!Arrays.asList(vector).contains(carton[i][j])){
-                    System.out.println("Línea " + (i+1) + ": NO");
-                    continue linea;
-                }
-
-            }
-
-            System.out.println("Línea " + (i+1) + ": CORRECTA!!");
-            break;
-
-        }
+//
+//        System.out.print("\n");
+//
+//
+//        System.out.println("PREMIOS: ");
+//
+//        System.out.print("\n");
+//
+//        //e)
+//        //compruebo bingo
+//        boolean haybingo = true;
+//        bingo:
+//        for (int i = 0; i < carton.length; i++) {
+//            for (int j = 0; j < carton[0].length; j++) {
+//
+//                if(!Arrays.asList(vector).contains(carton[i][j])){
+//                    System.out.println("No hay BINGO.");
+//                    haybingo = false;
+//                    break bingo;
+//                }
+//            }
+//        }
+//
+//        if (haybingo){
+//            System.out.println("HAY BINGO!!");
+//            return;
+//        }
+//
+//        //f)
+//        //si no hay BINGO compruebo línea
+//        linea:
+//        for (int i = 0; i < carton.length; i++) {
+//            for (int j = 0; j < carton[0].length; j++) {
+//
+//                if(!Arrays.asList(vector).contains(carton[i][j])){
+//                    System.out.println("Línea " + (i+1) + ": NO");
+//                    continue linea;
+//                }
+//
+//            }
+//
+//            System.out.println("Línea " + (i+1) + ": CORRECTA!!");
+//            break;
+//
+//        }
 
     }
 

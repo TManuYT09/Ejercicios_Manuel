@@ -101,6 +101,11 @@ public class Main {
 //        int grados_kelvin=Metodos.gradoKelvin(grados);
 //        Metodos.prueba_mismaclase();
 //        System.out.println("Los "+ grados +" grados celsius convertidos a grados Kelvin son "+ grados_kelvin);
-        Bingo bingo=new Bingo();
+//        Bingo bingo=new Bingo();
+//        CaraCruz.caraCruz();
+//        EjemploVarargs.principal();
+
+//        Bateria1Tema4.principal();
+        Bateria2Tema4.principal();
     }
 }
