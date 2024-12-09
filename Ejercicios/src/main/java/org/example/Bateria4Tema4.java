@@ -44,25 +44,28 @@ public class Bateria4Tema4 {
         int mayor=Arrays.binarySearch(semana,semanaOrdenada[semanaOrdenada.length-1]);
 
         switch (mayor){
-            case 0: System.out.println("MARTES");break;
-            case 1: System.out.println("MIERCOLES");break;
-            case 2: System.out.println("JUEVES");break;
-            case 3: System.out.println("VIERNES");break;
-            case 4: System.out.println("SÁBADO");break;
-            case 5: System.out.println("DOMINGO");break;
+            case 0: System.out.print("MARTES");break;
+            case 1: System.out.print("MIERCOLES");break;
+            case 2: System.out.print("JUEVES");break;
+            case 3: System.out.print("VIERNES");break;
+            case 4: System.out.print("SÁBADO");break;
+            case 5: System.out.print("DOMINGO");break;
         }
+        System.out.print(" ");
         switch (menor){
-            case 0: System.out.println("MARTES");break;
-            case 1: System.out.println("MIERCOLES");break;
-            case 2: System.out.println("JUEVES");break;
-            case 3: System.out.println("VIERNES");break;
-            case 4: System.out.println("SÁBADO");break;
-            case 5: System.out.println("DOMINGO");break;
+            case 0: System.out.print("MARTES");break;
+            case 1: System.out.print("MIERCOLES");break;
+            case 2: System.out.print("JUEVES");break;
+            case 3: System.out.print("VIERNES");break;
+            case 4: System.out.print("SÁBADO");break;
+            case 5: System.out.print("DOMINGO");break;
         }
-        if (mayor==6){
-            System.out.println("SI");
+        System.out.print(" ");
+        if (mayor==5){
+            System.out.print("SI");
         }else {
-            System.out.println("NO");
+            System.out.print("NO");
         }
+        System.out.println();
     }
 }// class solution
