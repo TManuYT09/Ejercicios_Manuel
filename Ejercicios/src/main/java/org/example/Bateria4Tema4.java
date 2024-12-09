@@ -40,6 +40,29 @@ public class Bateria4Tema4 {
         float[] semanaOrdenada = semana.clone();
         Arrays.sort(semanaOrdenada);
 
-        System.out.println(Arrays.toString(semanaOrdenada));
+        int menor=Arrays.binarySearch(semana,semanaOrdenada[0]);
+        int mayor=Arrays.binarySearch(semana,semanaOrdenada[semanaOrdenada.length-1]);
+
+        switch (mayor){
+            case 0: System.out.println("MARTES");break;
+            case 1: System.out.println("MIERCOLES");break;
+            case 2: System.out.println("JUEVES");break;
+            case 3: System.out.println("VIERNES");break;
+            case 4: System.out.println("SÁBADO");break;
+            case 5: System.out.println("DOMINGO");break;
+        }
+        switch (menor){
+            case 0: System.out.println("MARTES");break;
+            case 1: System.out.println("MIERCOLES");break;
+            case 2: System.out.println("JUEVES");break;
+            case 3: System.out.println("VIERNES");break;
+            case 4: System.out.println("SÁBADO");break;
+            case 5: System.out.println("DOMINGO");break;
+        }
+        if (mayor==6){
+            System.out.println("SI");
+        }else {
+            System.out.println("NO");
+        }
     }
 }// class solution
