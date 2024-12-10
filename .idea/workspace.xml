@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -31,7 +34,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Bateria4Tema4.executor": "Run",
+    "Application.Chicles.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Spiderman.executor": "Run",
+    "Application.TrenDelAmor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "<unknown>",
