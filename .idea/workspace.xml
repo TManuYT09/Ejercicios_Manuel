@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -37,16 +38,31 @@
     "Application.Chicles.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.Spiderman.executor": "Run",
+    "Application.TablaMultiplicar.executor": "Run",
     "Application.TrenDelAmor.executor": "Run",
+    "JUnit.All in Ejercicios.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "<unknown>",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1dam/Programación/Ejercicios"
+    "last_opened_file_path": "C:/Users/1dam/Programación/Ejercicios",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Ejercicios">
     <configuration name="Bateria4Tema4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Bateria4Tema4" />
       <module name="Ejercicios" />
@@ -60,8 +76,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in Ejercicios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ejercicios" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Ejercicios" />
         <item itemvalue="Application.Bateria4Tema4" />
       </list>
     </recent_temporary>
