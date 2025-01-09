@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,7 +36,11 @@
   "keyToString": {
     "Application.Bateria4Tema4.executor": "Run",
     "Application.Chicles.executor": "Run",
+    "Application.Factorial.executor": "Run",
+    "Application.Fibonacci.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.Recursividad3.executor": "Run",
+    "Application.Recusividad2.executor": "Run",
     "Application.Spiderman.executor": "Run",
     "Application.TablaMultiplicar.executor": "Run",
     "Application.TrenDelAmor.executor": "Run",
@@ -62,9 +66,48 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Ejercicios">
+  <component name="RunManager">
     <configuration name="Bateria4Tema4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Bateria4Tema4" />
+      <module name="Ejercicios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Factorial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Factorial" />
+      <module name="Ejercicios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Fibonacci" />
+      <module name="Ejercicios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Recusividad2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Recusividad2" />
       <module name="Ejercicios" />
       <extension name="coverage">
         <pattern>
@@ -86,6 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Recusividad2" />
+        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.Factorial" />
         <item itemvalue="JUnit.All in Ejercicios" />
         <item itemvalue="Application.Bateria4Tema4" />
       </list>
